@@ -1,0 +1,15 @@
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: none;
+  font-size: 1.6rem;
+  color: var(--bg-color);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 0 1rem var(--main-color);
+}

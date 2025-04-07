@@ -1,0 +1,35 @@
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding:0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* :root {
+  --bg-color: #fff;
+  --snd-bg-color: #d5fdf9;
+  --text-color:  #000;
+  --main-color: #007f73;
+} */
+
+:root {
+  --bg-color: #ffffff;
+  --snd-bg-color: #d6ffea;
+  --text-color:  #000000;
+  --main-color: #3cac74;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
