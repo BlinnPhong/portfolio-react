@@ -10,7 +10,7 @@ interface Props {
 
 const ProjectPreview = ({
   children = "",
-  imgSrc = "./project-preview-template.jpg",
+  imgSrc = `${import.meta.env.BASE_URL}/project-preview-template.jpg`,
   title = "Project Preview",
 }: Props) => {
   return (
@@ -21,6 +21,7 @@ const ProjectPreview = ({
           <h3>{title}</h3>
         </div>
       </div>
+
       <div className="readmore-btn">
         <LinkButton>En savoir +</LinkButton>
       </div>

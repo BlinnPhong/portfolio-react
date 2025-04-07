@@ -9,7 +9,10 @@ const HomePage = () => {
     <>
       <section className="about" id="about">
         <div className="about-img">
-          <img src="./headshot.png" alt="Headshot Image"></img>
+          <img
+            src={`${import.meta.env.BASE_URL}/headshot.png`}
+            alt="Headshot Image"
+          ></img>
         </div>
 
         <div className="about-content">
