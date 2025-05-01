@@ -1,4 +1,6 @@
 <script>
   // Redirect all 404s to index.html so React Router can handle them
-  window.location.replace('/portfolio-react/index.html');
+  //window.location.replace('/portfolio-react/index.html');
+  var redirectUrl = window.location.pathname.replace(/^\/[^/]+/, '');
+  window.location.replace('/' + redirectUrl);
 </script>
