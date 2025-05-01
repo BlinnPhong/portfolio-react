@@ -1,6 +1,15 @@
-<script>
-  // Redirect all 404s to index.html so React Router can handle them
-  //window.location.replace('/portfolio-react/index.html');
-  var redirectUrl = window.location.pathname.replace(/^\/[^/]+/, '');
-  window.location.replace('/' + redirectUrl);
-</script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found</title>
+  </head>
+  <body>
+    <script>      
+      //window.location.replace('/portfolio-react/index.html');
+      var redirectUrl = window.location.pathname.replace(/^\/[^/]+/, '');
+      window.location.replace('portfolio-react/' + redirectUrl);
+    </script>
+  </body>
+</html>
