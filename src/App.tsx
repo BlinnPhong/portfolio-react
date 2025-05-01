@@ -18,7 +18,10 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/symfonyproject" element={<SymfonyProjectPage />} />
+            <Route
+              path="/mediatekformationsproject"
+              element={<SymfonyProjectPage />}
+            />
           </Routes>
           <Footer />
         </BrowserRouter>

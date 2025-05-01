@@ -21,9 +21,11 @@ const HomePage = () => {
             Étudiant <span className="hint">BTS SIO SLAM</span>
           </h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam
-            eligendi molestiae placeat architecto reprehenderit? Amet quia et
-            unde facilis, nihil tempora quod atque numquam quis?
+            Passionnée par la programmation, j’ai décidé de reprendre mes études
+            en 2023 en intégrant un BTS SIO option SLAM (Solutions Logicielles
+            et Applications Métiers). Cette formation me permet de consolider
+            mes compétences techniques et de me préparer à la poursuite de mon
+            parcours en Licence 3 Informatique.
           </p>
 
           <div className="social-media">
