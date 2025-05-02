@@ -1,5 +1,6 @@
 import React from "react";
 import "./LinkButton.css";
+import { Link } from "react-router-dom";
 
 interface Props {
   additionalClassName?: string;
@@ -15,9 +16,9 @@ const LinkButton = ({
   type = "default",
 }: Props) => {
   return (
-    <a href={href} className={additionalClassName + " link-btn-" + type}>
+    <Link to={href} className={additionalClassName + " link-btn-" + type}>
       {children}
-    </a>
+    </Link>
   );
 };
 

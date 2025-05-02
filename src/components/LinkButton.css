@@ -8,6 +8,7 @@
   color: var(--bg-color);
   font-weight: 600;
   text-align: center;
+  color: var(--text-color);
 }
 
 .link-btn-default:hover {

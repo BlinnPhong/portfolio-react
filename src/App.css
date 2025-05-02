@@ -1,1 +1,13 @@
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
 
+.hint {
+  color: var(--main-color);
+}
+
+.heading {
+  font-size: 6rem;
+  text-align: center;
+}

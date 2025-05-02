@@ -1,5 +1,5 @@
 {
-  "homepage": " https://BlinnPhong.github.io/portfolio-react/",
+  "homepage": " https://BlinnPhong.github.io/portfolio-react",
   "name": "my-react-portfolio",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +8,7 @@
     "predeploy" : "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && copy dist\\index.html dist\\404.html",
     "preview": "vite preview"
   },
   "dependencies": {

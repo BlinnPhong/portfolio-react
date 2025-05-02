@@ -45,28 +45,23 @@ const HomePage = () => {
         <h2 className="heading">
           Mes <span className="hint">Compétences</span>
         </h2>
-      </section>
-
-      <section className="projects" id="projects">
-        <h2 className="heading">
-          Mes <span className="hint">Projets</span>
-        </h2>
-
-        <div className="projects-container">
-          <ProjectPreview title="Évolution d'une Application Web Symfony" />
-          <ProjectPreview />
+        <div className="skills-container">
+          <i className="devicon-symfony-original-wordmark"></i>
+          <i className="devicon-react-original-wordmark colored"></i>
+          <i className="devicon-csharp-plain colored"></i>
+          <i className="devicon-cplusplus-plain colored"></i>
+          <i className="devicon-php-plain colored"></i>
+          <i className="devicon-python-plain-wordmark colored"></i>
+          <i className="devicon-java-plain-wordmark colored"></i>
+          <i className="devicon-mysql-plain-wordmark colored"></i>
+          <i className="devicon-git-plain-wordmark colored"></i>
+          <i className="devicon-opengl-plain colored"></i>
         </div>
-      </section>
-
-      <section className="bts" id="bts">
-        <h2 className="heading">
-          Le <span className="hint">BTS SIO</span>
-        </h2>
       </section>
 
       <section className="contact" id="contact">
         <h2 className="heading">
-          <span className="hint">Contacter Moi</span>
+          Contacter<span className="hint"> Moi</span>
         </h2>
 
         <form action="#">

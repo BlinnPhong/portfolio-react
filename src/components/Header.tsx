@@ -1,22 +1,21 @@
 import React from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
       <header className="header">
-        <a href="#about" className="logo">
+        <Link to="/" className="logo">
           Donovan Blocus
-        </a>
+        </Link>
 
         <i className="bx bx-menu" id="menu-icon"></i>
 
         <nav className="navbar">
-          <a href="#about">Présentation</a>
-          <a href="#skills">Compétences</a>
-          <a href="#projects">Projets</a>
-          <a href="#bts">BTS SIO</a>
-          <a href="/#contact">Contact</a>
+          <Link to="/">Présentation</Link>
+          <Link to="/projects">Projets</Link>
+          <Link to="/bts">BTS SIO</Link>
         </nav>
       </header>
     </>

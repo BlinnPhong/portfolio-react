@@ -1,0 +1,12 @@
+.projects h2 {
+  margin-bottom: 5rem;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 5rem;
+  column-gap: 2rem;
+}
