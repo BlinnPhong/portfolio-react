@@ -1,9 +1,21 @@
 .idiatech-stage-content {
   margin-top: 10rem;
-  padding: 0 10rem;
+  padding: 0 30rem;
   font-size: 2rem;
 }
 
 .idiatech-stage-content p, a {
   line-height: 1.6;
+}
+
+.idiatech-stage-content a {  
+  cursor: pointer;
+  color: var(--snd-bg-color);
+  text-decoration: underline;
+}
+
+@media(max-width: 1300px) {
+  .idiatech-stage-content{
+    padding: 0 5rem;
+  }
 }

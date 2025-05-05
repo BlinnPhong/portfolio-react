@@ -83,6 +83,49 @@
   margin-top: 2rem;
 }
 
+.education h2 {
+  margin-bottom: 7rem;
+}
+
+.education-container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.education-container {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 5rem;
+}
+
+.education-container-formation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.education-container-formation i {
+  font-size: 2rem;
+  color: var(--snd-bg-color);
+}
+
+.education-container-formation .year {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--snd-bg-color);
+}
+
+.education-container-formation .title {
+  margin-bottom: 0.5rem;
+}
+
+.education-container-formation .location {
+  color: rgb(185, 185, 185);
+}
+
 .skills h2 {
   margin-bottom: 7rem;
 }
@@ -98,6 +141,6 @@
   max-width: 60rem;
 }
 
-.skills div i {
+.skills .skills-container i {
   font-size: 10rem;
 }

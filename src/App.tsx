@@ -13,8 +13,8 @@ import ProjectsPage from "./components/pages/ProjectsPage";
 import { useEffect } from "react";
 import MediatekFormationPage from "./components/pages/MediatekFormationPage";
 import MediatekDocumentPage from "./components/pages/MediatekDocumentPage";
-import StagePage from "./components/pages/StagesPage";
 import IdiaTechStagePage from "./components/pages/IdiaTechStagePage";
+import VeilleTechnoPage from "./components/pages/VeilleTechnoPage";
 
 function ScrollToTop() {
   const location = useLocation();
@@ -44,8 +44,8 @@ function App() {
               path="/mediatekdocumentsproject"
               element={<MediatekDocumentPage />}
             />
-            <Route path="/stages" element={<StagePage />} />
             <Route path="/idiatechstage" element={<IdiaTechStagePage />} />
+            <Route path="/veilletech" element={<VeilleTechnoPage />} />
           </Routes>
           <Footer />
         </BrowserRouter>

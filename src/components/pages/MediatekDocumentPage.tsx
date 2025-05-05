@@ -56,44 +56,14 @@ const MediatekDocumentPage = () => {
   ];
 
   const competence_b11 = [
-    <p>Recenser et identifier les ressources numériques</p>,
-    <p>
-      Exploiter des référentiels, normes et standards adoptés par le prestataire
-      informatique
-    </p>,
     <p>
       Mettre en place et vérifier les niveaux d’habilitation associés à un
       service
     </p>,
-    <p>Vérifier les conditions de la continuité d’un service informatique</p>,
     <p>Gérer des sauvegardes</p>,
-    <p>
-      Vérifier le respect des règles d’utilisation des ressources numériques
-    </p>,
   ];
-
   const competence_b12 = [
-    <p>Collecter, suivre et orienter des demandes</p>,
-    <p>
-      Traiter des demandes concernant les services réseau et système,
-      applicatifs
-    </p>,
     <p>Traiter des demandes concernant les applications</p>,
-  ];
-
-  const competence_b13 = [
-    <p>
-      Participer à la valorisation de l’image de l’organisation sur les médias
-      numériques en tenant compte du cadre juridique et des enjeux économiques
-    </p>,
-    <p>
-      Référencer les services en ligne de l’organisation et mesurer leur
-      visibilité
-    </p>,
-    <p>
-      Participer à l’évolution d’un site Web exploitant les données de
-      l’organisation.
-    </p>,
   ];
 
   const competence_b14 = [
@@ -101,18 +71,10 @@ const MediatekDocumentPage = () => {
     <p>Planifier les activités</p>,
     <p>Évaluer les indicateurs de suivi d’un projet et analyser les écarts</p>,
   ];
-
   const competence_b15 = [
     <p>Réaliser les tests d’intégration et d’acceptation d’un service</p>,
     <p>Déployer un service</p>,
     <p>Accompagner les utilisateurs dans la mise en place d’un service</p>,
-  ];
-
-  const competence_b16 = [
-    <p>Mettre en place son environnement d’apprentissage personnel</p>,
-    <p>Mettre en œuvre des outils et stratégies de veille informationnelle</p>,
-    <p>Gérer son identité professionnelle</p>,
-    <p>Développer son projet professionnel</p>,
   ];
 
   const competence_b21 = [
@@ -167,7 +129,7 @@ const MediatekDocumentPage = () => {
     <>
       <section className="mediatekdocument" id="mediatekdocument">
         <h2 className="heading">
-          MediatekDocument<span className="hint"></span>
+          Mediatek<span className="hint">Document</span>
         </h2>
 
         <div className="mediatekdocument-content">
@@ -268,7 +230,7 @@ const MediatekDocumentPage = () => {
             </p>
           </ProjectParagraph>
 
-          <ProjectParagraph title="Documentation Utilisateur">
+          <ProjectParagraph title="Documentation utilisateur">
             <div>
               <iframe
                 width="854"
@@ -302,6 +264,8 @@ const MediatekDocumentPage = () => {
               informatique
             </p>
             <ListGroup items={competence_b15} className="pl-3" />
+
+            <br></br>
 
             <p>B2.1 : Concevoir et développer une solution applicative</p>
             <ListGroup items={competence_b21} className="pl-3" />

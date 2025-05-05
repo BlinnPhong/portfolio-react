@@ -1,6 +1,6 @@
 .mediatekformation-content {
   margin-top: 10rem;
-  padding: 0 10rem;
+  padding: 0 30rem;
   font-size: 2rem;
 }
 
@@ -9,8 +9,7 @@
 }
 
 .mediatekformation .heading {
-  text-align: left;
-  margin-left: 10rem;
+  text-align: center;
 }
 
 
@@ -18,4 +17,10 @@
   cursor: pointer;
   color: var(--snd-bg-color);
   text-decoration: underline;
+}
+
+@media(max-width: 1300px) {
+  .mediatekformation-content {
+    padding: 0 5rem;
+  }
 }

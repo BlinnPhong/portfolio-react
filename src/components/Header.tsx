@@ -15,7 +15,15 @@ const Header = () => {
         <nav className="navbar">
           <Link to="/">Présentation</Link>
           <Link to="/projects">Projets</Link>
-          <Link to="#">Veilles Technologiques</Link>
+          <Link to="/veilletech">Veilles Technologiques</Link>
+          <a
+            href={`${
+              import.meta.env.BASE_URL
+            }/documents/tableau-de-synthese.pdf`}
+            target="blank"
+          >
+            Tableau de Synthèse
+          </a>
         </nav>
       </header>
     </>

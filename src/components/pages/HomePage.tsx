@@ -31,7 +31,7 @@ const HomePage = () => {
           <div className="social-media">
             <LinkButton
               isExternal={true}
-              href="https://github.com/BlinnPhong"
+              href="https://www.linkedin.com/in/donovan-blocus-72519832a/?originalSubdomain=fr"
               type="social-media"
             >
               <i className="bx bxl-linkedin"></i>
@@ -51,6 +51,46 @@ const HomePage = () => {
           >
             Consulter mon CV
           </LinkButton>
+        </div>
+      </section>
+
+      <section className="education" id="education">
+        <h2 className="heading">
+          Mon Parcours <span className="hint">Scolaire</span>
+        </h2>
+        <div className="education-container-wrapper">
+          <div className="education-container">
+            <div className="education-container-formation">
+              <i className="bx bx-disc"></i>
+              <div className="formation-content">
+                <h3 className="year">2023 - 2025</h3>
+                <p className="title">
+                  BTS SIO, spécilaité Solutions Logicielles et Applications
+                  Métiers
+                </p>
+                <p className="location">CNED</p>
+              </div>
+            </div>
+            <div className="education-container-formation">
+              <i className="bx bx-disc"></i>
+              <div className="formation-content">
+                <h3 className="year">2020</h3>
+                <p className="title">L1 Histoire</p>
+                <p className="location">Sorbonne Université</p>
+              </div>
+            </div>
+            <div className="education-container-formation">
+              <i className="bx bx-disc"></i>
+              <div className="formation-content">
+                <h3 className="year">2018</h3>
+                <p className="title">
+                  Baccalauréat Scientifique, spécialité Informatique et Sciences
+                  du Numérique
+                </p>
+                <p className="location">Lycée Emmanuel Mounier</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

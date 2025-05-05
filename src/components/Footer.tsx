@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="social">
         <LinkButton
           isExternal={true}
-          href="https://github.com/BlinnPhong"
+          href="https://www.linkedin.com/in/donovan-blocus-72519832a/?originalSubdomain=fr"
           type="social-media"
         >
           <i className="bx bxl-linkedin"></i>

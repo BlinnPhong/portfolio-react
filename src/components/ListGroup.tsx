@@ -11,7 +11,7 @@ const ListGroup = ({ className = "", items }: Props) => {
     <>
       <ul className={`${className}`}>
         {items.map((item, index) => (
-          <li>{item}</li>
+          <li key={index}>{item}</li>
         ))}
       </ul>
     </>

@@ -1,0 +1,33 @@
+.veilletech-content {
+  margin-top: 10rem;
+  padding: 0 30rem;
+  font-size: 2rem;
+}
+
+.veilletech-content p, a {
+  line-height: 1.6;
+}
+
+.veilletech .heading {
+  text-align: center;
+}
+
+
+.veilletech-content a {  
+  cursor: pointer;
+  color: var(--snd-bg-color);
+  text-decoration: underline;
+}
+
+.veilletech-content .strategie-content h4 {
+  margin-bottom: 1rem;
+}
+.veilletech-content .strategie-content {
+  padding-left: 2rem;
+}
+
+@media(max-width: 1300px) {
+  .veilletech-content{
+    padding: 0 5rem;
+  }
+}
