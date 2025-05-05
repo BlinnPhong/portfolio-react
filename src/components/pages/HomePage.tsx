@@ -29,15 +29,28 @@ const HomePage = () => {
           </p>
 
           <div className="social-media">
-            <LinkButton href="#" type="social-media">
+            <LinkButton
+              isExternal={true}
+              href="https://github.com/BlinnPhong"
+              type="social-media"
+            >
               <i className="bx bxl-linkedin"></i>
             </LinkButton>
-            <LinkButton href="#" type="social-media">
+            <LinkButton
+              isExternal={true}
+              href="https://github.com/BlinnPhong"
+              type="social-media"
+            >
               <i className="bx bxl-github"></i>
             </LinkButton>
           </div>
 
-          <LinkButton href="#">Consulter mon CV</LinkButton>
+          <LinkButton
+            isExternal={true}
+            href={`${import.meta.env.BASE_URL}/documents/CV.pdf`}
+          >
+            Consulter mon CV
+          </LinkButton>
         </div>
       </section>
 

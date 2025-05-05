@@ -12,15 +12,21 @@ const ProjectsPage = () => {
       <div className="projects-container">
         <ProjectPreview
           title="MediatekFormation"
-          description="Évolution d'une Application Web Symfony"
+          description="Évolution d'une Application Web Symfony (2024)"
           href="/mediatekformationsproject"
           imgSrc={`${import.meta.env.BASE_URL}/mediatekformations-preview.jpg`}
         />
         <ProjectPreview
           title="MediatekDocument"
-          description="Évolution d'une Application de bureau C#"
+          description="Évolution d'une Application de bureau C# (2024)"
           href="/mediatekdocumentsproject"
           imgSrc={`${import.meta.env.BASE_URL}/mediatekdocuments-preview.jpg`}
+        />
+        <ProjectPreview
+          title="idIA Tech"
+          description="Stage Développeur (2024)"
+          href="/idiatechstage"
+          imgSrc={`${import.meta.env.BASE_URL}/idia_tech_cover.jpg`}
         />
       </div>
     </section>

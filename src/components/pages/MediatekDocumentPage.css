@@ -1,0 +1,23 @@
+.mediatekdocument-content p, a {
+  line-height: 1.6;
+}
+
+.mediatekdocument .heading {
+  text-align: left;
+  margin-left: 10rem;
+}
+
+.mediatekdocument-content {
+  margin-top: 10rem;
+  padding: 0 10rem;
+  font-size: 2rem;
+}
+
+
+.mediatekdocument-content a {  
+  cursor: pointer;
+  color: var(--snd-bg-color);
+  text-decoration: underline;
+}
+
+

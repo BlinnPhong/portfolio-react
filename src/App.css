@@ -1,10 +1,14 @@
 section {
   min-height: 100vh;
-  padding: 10rem 9% 2rem;
+  padding: 15rem 9% 2rem;
 }
 
 .hint {
   color: var(--main-color);
+}
+
+.hint-snd {
+  color: var(--snd-bg-color);
 }
 
 .heading {

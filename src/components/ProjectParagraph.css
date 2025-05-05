@@ -1,0 +1,10 @@
+.project-paragraph h3 {  
+  font-size: 3.7rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color:var(--main-color);
+}
+
+.project-paragraph .content {
+  margin-bottom: 5rem;
+}

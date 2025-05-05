@@ -6,10 +6,18 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="social">
-        <LinkButton href="#" type="social-media">
+        <LinkButton
+          isExternal={true}
+          href="https://github.com/BlinnPhong"
+          type="social-media"
+        >
           <i className="bx bxl-linkedin"></i>
         </LinkButton>
-        <LinkButton href="#" type="social-media">
+        <LinkButton
+          isExternal={true}
+          href="https://github.com/BlinnPhong"
+          type="social-media"
+        >
           <i className="bx bxl-github"></i>
         </LinkButton>
       </div>

@@ -1,0 +1,9 @@
+.stages-container {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 5rem;
+  column-gap: 2rem;
+}

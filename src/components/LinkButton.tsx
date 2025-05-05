@@ -7,6 +7,7 @@ interface Props {
   children?: React.ReactNode;
   href?: string;
   type?: "default" | "social-media";
+  isExternal?: boolean;
 }
 
 const LinkButton = ({
@@ -14,8 +15,17 @@ const LinkButton = ({
   children,
   href = "#",
   type = "default",
+  isExternal = false,
 }: Props) => {
-  return (
+  return isExternal ? (
+    <a
+      href={href}
+      target="_blank"
+      className={additionalClassName + " link-btn-" + type}
+    >
+      {children}
+    </a>
+  ) : (
     <Link to={href} className={additionalClassName + " link-btn-" + type}>
       {children}
     </Link>

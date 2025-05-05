@@ -1,0 +1,9 @@
+.idiatech-stage-content {
+  margin-top: 10rem;
+  padding: 0 10rem;
+  font-size: 2rem;
+}
+
+.idiatech-stage-content p, a {
+  line-height: 1.6;
+}

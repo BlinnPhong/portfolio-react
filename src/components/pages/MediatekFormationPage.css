@@ -1,47 +1,21 @@
-
 .mediatekformation-content {
-  margin-top: 5rem;
+  margin-top: 10rem;
   padding: 0 10rem;
   font-size: 2rem;
 }
 
-.mediatekformation-content-section {
-  margin-bottom: 5rem;
+.mediatekformation-content p, a {
+  line-height: 1.6;
 }
 
-.mediatekformation-content h3 {  
-  font-size: 3.7rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  color:var(--main-color);
+.mediatekformation .heading {
+  text-align: left;
+  margin-left: 10rem;
 }
 
-
-.mediatekformation-content ul {  
-  list-style-type: none;
-}
-
-.mediatekformation-content .liste-competences {
-  list-style-type:disc;
-  margin-left: 3rem;
-  margin-bottom: 2rem;
-}
-
-.mediatekformation-content-competences p {
-  margin-bottom: 2rem;
-}
-
-.mediatekformation-content ul li {  
-  margin-bottom: 1rem;
-}
 
 .mediatekformation-content a {  
   cursor: pointer;
-  color: var(--text-color);
-  font-weight: 700;
-}
-
-.mediatekformation-content a:hover {
-  color: var(--main-color);
+  color: var(--snd-bg-color);
   text-decoration: underline;
 }

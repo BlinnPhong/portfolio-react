@@ -10,10 +10,11 @@ import {
   useLocation,
 } from "react-router-dom";
 import ProjectsPage from "./components/pages/ProjectsPage";
-import BtsPage from "./components/pages/BtsPage";
 import { useEffect } from "react";
 import MediatekFormationPage from "./components/pages/MediatekFormationPage";
 import MediatekDocumentPage from "./components/pages/MediatekDocumentPage";
+import StagePage from "./components/pages/StagesPage";
+import IdiaTechStagePage from "./components/pages/IdiaTechStagePage";
 
 function ScrollToTop() {
   const location = useLocation();
@@ -43,7 +44,8 @@ function App() {
               path="/mediatekdocumentsproject"
               element={<MediatekDocumentPage />}
             />
-            <Route path="/bts" element={<BtsPage />} />
+            <Route path="/stages" element={<StagePage />} />
+            <Route path="/idiatechstage" element={<IdiaTechStagePage />} />
           </Routes>
           <Footer />
         </BrowserRouter>

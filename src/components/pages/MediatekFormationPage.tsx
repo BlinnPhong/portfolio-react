@@ -1,250 +1,301 @@
 import React from "react";
 import "./MediatekFormationPage.css";
 import { Link } from "react-router-dom";
+import ListGroup from "../ListGroup";
+import ProjectParagraph from "../ProjectParagraph";
 
 const MediatekFormationPage = () => {
+  const documents = [
+    <a
+      href={`${
+        import.meta.env.BASE_URL
+      }/documents/mediatekformations/contexte.pdf`}
+      target="blank"
+    >
+      ContexteOfficiel.pdf
+    </a>,
+    <a
+      href={`${
+        import.meta.env.BASE_URL
+      }/documents/mediatekformations/contratDeveloppement.pdf`}
+      target="blank"
+    >
+      ContratDeDéveloppement.pdf
+    </a>,
+    <a
+      href={`${
+        import.meta.env.BASE_URL
+      }/documents/mediatekformations/cahier_des_charges.pdf`}
+      target="blank"
+    >
+      CahierDesCharges.pdf
+    </a>,
+    <a
+      href={`${
+        import.meta.env.BASE_URL
+      }/documents/mediatekformations/AP1_missions.pdf`}
+      target="blank"
+    >
+      Missions.pdf
+    </a>,
+    <a
+      href={`${
+        import.meta.env.BASE_URL
+      }/documents/mediatekformations/bilan_atelier1.pdf`}
+      target="blank"
+    >
+      CompteRendu.pdf
+    </a>,
+    <a
+      href={`${
+        import.meta.env.BASE_URL
+      }/documents/mediatekformations/pv_recette.pdf`}
+      target="blank"
+    >
+      PV_Recette.pdf
+    </a>,
+  ];
+
+  const competence_b11 = [
+    <p>Recenser et identifier les ressources numériques</p>,
+    <p>
+      Exploiter des référentiels, normes et standards adoptés par le prestataire
+      informatique
+    </p>,
+    <p>
+      Mettre en place et vérifier les niveaux d’habilitation associés à un
+      service
+    </p>,
+    <p>Vérifier les conditions de la continuité d’un service informatique</p>,
+    <p>Gérer des sauvegardes</p>,
+    <p>
+      Vérifier le respect des règles d’utilisation des ressources numériques
+    </p>,
+  ];
+
+  const competence_b12 = [
+    <p>Collecter, suivre et orienter des demandes</p>,
+    <p>
+      Traiter des demandes concernant les services réseau et système,
+      applicatifs
+    </p>,
+    <p>Traiter des demandes concernant les applications</p>,
+  ];
+
+  const competence_b13 = [
+    <p>
+      Participer à la valorisation de l’image de l’organisation sur les médias
+      numériques en tenant compte du cadre juridique et des enjeux économiques
+    </p>,
+    <p>
+      Référencer les services en ligne de l’organisation et mesurer leur
+      visibilité
+    </p>,
+    <p>
+      Participer à l’évolution d’un site Web exploitant les données de
+      l’organisation.
+    </p>,
+  ];
+
+  const competence_b14 = [
+    <p>Analyser les objectifs et les modalités d’organisation d’un projet</p>,
+    <p>Planifier les activités</p>,
+    <p>Évaluer les indicateurs de suivi d’un projet et analyser les écarts</p>,
+  ];
+
+  const competence_b15 = [
+    <p>Réaliser les tests d’intégration et d’acceptation d’un service</p>,
+    <p>Déployer un service</p>,
+    <p>Accompagner les utilisateurs dans la mise en place d’un service</p>,
+  ];
+
+  const competence_b16 = [
+    <p>Mettre en place son environnement d’apprentissage personnel</p>,
+    <p>Mettre en œuvre des outils et stratégies de veille informationnelle</p>,
+    <p>Gérer son identité professionnelle</p>,
+    <p>Développer son projet professionnel</p>,
+  ];
+
+  const competence_b21 = [
+    <p>Analyser un besoin exprimé et son contexte juridique</p>,
+    <p>
+      Participer à la conception de l’architecture d’une solution applicative
+    </p>,
+    <p>Modéliser une solution applicative</p>,
+    <p>Exploiter les ressources du cadre applicatif &#40;framework&#41;</p>,
+    <p>Identifier, développer, utiliser ou adapter des composants logiciels</p>,
+    <p>
+      Exploiter les technologies Web pour mettre en œuvre les échanges entre
+      applications, y compris de mobilité
+    </p>,
+    <p>Utiliser des composants d’accès aux données</p>,
+    <p>Intégrer en continu les versions d’une solution applicative</p>,
+    <p>
+      Réaliser les tests nécessaires à la validation ou à la mise en production
+      d’éléments adaptés ou développés
+    </p>,
+    <p>
+      Rédiger des documentations technique et d’utilisation d’une solution
+      applicative
+    </p>,
+    <p>
+      Exploiter les fonctionnalités d’un environnement de développement et de
+      tests
+    </p>,
+  ];
+  const competence_b22 = [
+    <p>
+      Recueillir, analyser et mettre à jour les informations sur une version
+      d’une solution applicative
+    </p>,
+    <p>Évaluer la qualité d’une solution applicative</p>,
+    <p>Analyser et corriger un dysfonctionnement</p>,
+  ];
+  const competence_b23 = [
+    <p>Exploiter des données à l’aide d’un langage de requêtes</p>,
+    <p>Administrer et déployer une base de données</p>,
+  ];
+
   return (
-    <section className="mediatekformation" id="bts">
+    <section className="mediatekformation" id="mediatekformation">
       <h2 className="heading">
         MediatekFormation<span className="hint"></span>
       </h2>
 
       <div className="mediatekformation-content">
-        {/* Contexte */}
-        <div
-          className="mediatekformation-content-depot-distant
-          mediatekformation-content-section"
-        >
-          {" "}
-          <h3>Contexte</h3>
+        <ProjectParagraph title="Contexte">
+          <p>
+            Ce projet fait partie des ateliers de professionnalisation réalisés
+            dans le cadre de ma formation en BTS SIO, spécialité SLAM. Il s’agit
+            d’une mise en situation professionnelle réaliste, conçue pour me
+            permettre de mettre en œuvre concrètement mes compétences techniques
+            dans un contexte similaire à celui d’une entreprise.
+            <br></br>Dans ce contexte, j'occupe le rôle de technicien
+            développeur junior au sein de l'ESN InfoTech Services 86, qui a été
+            chargée par le réseau de médiathèques de la Vienne, MediaTek 86, de
+            la réalisation de plusieurs applications.
+          </p>
+        </ProjectParagraph>
+
+        <ProjectParagraph title="Existant">
           <p>
             MediatekFormation est un site web développé avec Symfony 6.4, qui
-            permet d'accéder aux vidéos d'auto-formation proposées par une
-            chaîne de médiathèques et qui sont aussi accessibles sur YouTube.
-            Actuellement, seule la partie front office du site a été mise en
-            œuvre.
+            permet d'accéder aux vidéos d'auto-formation (également accessibles
+            su Youtube) proposées par la chaîne de médiathèques MediaTek86.
+            <br></br>Actuellement, seule la partie front office du site a été
+            mise en œuvre et Voici les fonctionnalités globales disponible à ce
+            stade : consulter l'accueil, consulter les liste de
+            formations/playlists, consulter une formation/playlist spécifique,
+            consulter les CGU
           </p>
-        </div>
+        </ProjectParagraph>
 
-        {/* Demande */}
-        <div
-          className="mediatekformation-content-depot-distant
-          mediatekformation-content-section"
-        >
-          {" "}
-          <h3>Demande</h3>
+        <ProjectParagraph title="Demande">
           <p>
             Plusieurs missions m'ont été confiées, notamment la correction de
             bugs, l’ajout de nouvelles fonctionnalités, le développement de la
             partie back office et le déploiement du site.
           </p>
-          <p></p>
-        </div>
+        </ProjectParagraph>
 
-        {/* Langage et technologies utilisés */}
-        <div
-          className="mediatekformation-content-depot-distant
-          mediatekformation-content-section"
-        >
-          {" "}
-          <h3>Langages et technologies utilsés</h3>
-          <p>Symfony, PHP, HTML&#40;Twig&#41;&#47;CSS, SQL, Bootstrap</p>
-        </div>
+        <ProjectParagraph title="Langages et technologies utilsés">
+          <p>
+            Symfony, PHP, HTML&#40;Twig&#41;&#47;CSS, SQL, Bootstrap, Apache
+            NetBeans IDE 21, InfinityFree(Hébergeur)
+          </p>
+        </ProjectParagraph>
 
-        {/* Documents */}
-        <div
-          className="mediatekformation-content-depot-distant
-          mediatekformation-content-section"
-        >
-          {" "}
-          <h3>Documents</h3>
-          <div className="links">
-            {" "}
-            <ul>
-              <li>
-                <a
-                  href={`${
-                    import.meta.env.BASE_URL
-                  }/documents/mediatekformations/contexte.pdf`}
-                  target="blank"
-                >
-                  Contexte officiel
-                </a>
-              </li>
-              <li>
-                <a
-                  href={`${
-                    import.meta.env.BASE_URL
-                  }/documents/mediatekformations/contratDeveloppement.pdf`}
-                  target="blank"
-                >
-                  Contrat de développement
-                </a>
-              </li>
-              <li>
-                <a
-                  href={`${
-                    import.meta.env.BASE_URL
-                  }/documents/mediatekformations/cahier_des_charges.pdf`}
-                  target="blank"
-                >
-                  Cahier des charges
-                </a>
-              </li>
-              <li>
-                <a
-                  href={`${
-                    import.meta.env.BASE_URL
-                  }/documents/mediatekformations/AP1_missions.pdf`}
-                  target="blank"
-                >
-                  Missions
-                </a>
-              </li>
-              <li>
-                <a
-                  href={`${
-                    import.meta.env.BASE_URL
-                  }/documents/mediatekformations/bilan_atelier1.pdf`}
-                  target="blank"
-                >
-                  Compte rendu
-                </a>
-              </li>
-              <li>
-                <a
-                  href={`${
-                    import.meta.env.BASE_URL
-                  }/documents/mediatekformations/pv_recette.pdf`}
-                  target="blank"
-                >
-                  PV de recette
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <ProjectParagraph title="Documents" className="documents">
+          <ListGroup items={documents} className="list-none" />
+        </ProjectParagraph>
 
-        {/* Dépot distant */}
-        <div
-          className="mediatekformation-content-depot-distant
-          mediatekformation-content-section"
-        >
-          <h3>Dépôt distant</h3>
+        <ProjectParagraph title="Dépot distant">
           <a
             href="https://github.com/BlinnPhong/mediatekformation"
             target="blank"
           >
             Dépôt GitHub
           </a>
-        </div>
+        </ProjectParagraph>
 
-        {/* Site */}
-        <div
-          className="mediatekformation-content-depot-distant
-          mediatekformation-content-section"
-        >
-          <h3>Site</h3>
+        <ProjectParagraph title="Site">
           <a href="https://mediatekformationbis.kesug.com/" target="blank">
-            mediatekformationbis.kesug.com
+            Lien vers le site web
           </a>
-        </div>
+          <p>
+            Voici les identifiants pour la partie admin &#40;ces identifiants ne
+            sont présent sur cette page que temporairement pour l'examen du BTS
+            SIO&#41; :
+          </p>
+          <p>login : admin</p>
+          <p>password : admin</p>
+        </ProjectParagraph>
 
-        {/* Documentation technique */}
-        <div
-          className="mediatekformation-content-documentation
-          mediatekformation-content-section"
-        >
-          <h3>Documentation Technique</h3>
-        </div>
+        <ProjectParagraph title="Documentation technique">
+          <a
+            href="https://mediatekformationbis.kesug.com/public/mediatekformationdoc/index.html"
+            target="blank"
+          >
+            Lien vers la documentation technique
+          </a>
+        </ProjectParagraph>
 
-        {/* Video */}
-        <div
-          className="mediatekformation-content-video
-          mediatekformation-content-section"
-        >
-          <h3>Documentation Utilisateur</h3>
-          <video controls width="640">
+        <ProjectParagraph title="Documentation Utilisateur">
+          {/*<video controls width="640">
             <source
               src={`${import.meta.env.BASE_URL}/video/avoine.mp4`}
               type="video/mp4"
             />
-          </video>
-        </div>
+          </video>*/}
 
-        {/* Liste compétences*/}
-        <div
-          className="mediatekformation-content-competences
-          mediatekformation-content-section"
+          <div>
+            <iframe
+              width="854"
+              height="480"
+              src="https://www.youtube.com/embed/yuU1ouy-2TE"
+              title="YouTube video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </ProjectParagraph>
+
+        <ProjectParagraph
+          className="liste-competences"
+          title="Liste des compétences couvertes"
         >
-          <h3>Liste des compétences couvertes</h3>
           <p>B1.1 : Gérer le patrimoine informatique</p>
+          <ListGroup items={competence_b11} className="pl-3" />
 
           <p>
             B1.2 : Répondre aux incidents et aux demandes d’assistance et
             d’évolution
           </p>
+          <ListGroup items={competence_b12} className="pl-3" />
 
           <p>B1.3 : Développer la présence en ligne de l’organisation</p>
+          <ListGroup items={competence_b13} className="pl-3" />
 
           <p>B1.4 : Travailler en mode projet</p>
+          <ListGroup items={competence_b14} className="pl-3" />
 
           <p>
             B1.5 : Mettre à disposition des utilisateurs un service informatique
           </p>
+          <ListGroup items={competence_b15} className="pl-3" />
 
           <p>B2.1 : Concevoir et développer une solution applicative</p>
-          <ul className="liste-competences">
-            <li>Analyser un besoin exprimé et son contexte juridique</li>
-            <li>
-              Participer à la conception de l’architecture d’une solution
-              applicative
-            </li>
-            <li>Modéliser une solution applicative</li>
-            <li>Exploiter les ressources du cadre applicatif (framework)</li>
-            <li>
-              Identifier, développer, utiliser ou adapter des composants
-              logiciels
-            </li>
-            <li>
-              Exploiter les technologies Web pour mettre en œuvre les échanges
-              entre applications, y compris de mobilité
-            </li>
-            <li>Utiliser des composants d’accès aux données</li>
-            <li>Intégrer en continu les versions d’une solution applicative</li>
-            <li>
-              Réaliser les tests nécessaires à la validation ou à la mise en
-              production d’éléments adaptés ou développés
-            </li>
-            <li>
-              Rédiger des documentations technique et d’utilisation d’une
-              solution applicative
-            </li>
-            <li>
-              Exploiter les fonctionnalités d’un environnement de développement
-              et de tests
-            </li>
-          </ul>
+          <ListGroup items={competence_b21} className="pl-3" />
 
           <p>
             B2.2 : Assurer la maintenance corrective ou évolutive d’une solution
             applicative
           </p>
-          <ul className="liste-competences">
-            <li>
-              Recueillir, analyser et mettre à jour les informations sur une
-              version d’une solution applicative
-            </li>
-            <li>Évaluer la qualité d’une solution applicative</li>
-            <li>Analyser et corriger un dysfonctionnement</li>
-          </ul>
+          <ListGroup items={competence_b22} className="pl-3" />
 
           <p>B2.3 : Gérer les données</p>
-          <ul className="liste-competences">
-            <li>Exploiter des données à l’aide d’un langage de requêtes</li>
-            <li>Administrer et déployer une base de données</li>
-          </ul>
-        </div>
+          <ListGroup items={competence_b23} className="pl-3" />
+        </ProjectParagraph>
       </div>
     </section>
   );
