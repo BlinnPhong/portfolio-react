@@ -28,6 +28,10 @@
   cursor: pointer;
 }
 
+.navbar i {
+  font-size: 2rem;
+}
+
 .navbar a:hover, .navbar a.active {
   color: var(--main-color);
 }

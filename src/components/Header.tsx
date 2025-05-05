@@ -23,6 +23,7 @@ const Header = () => {
             target="blank"
           >
             Tableau de Synthèse
+            <i className="bx bx-link-external"></i>
           </a>
         </nav>
       </header>
