@@ -15,6 +15,19 @@ const IdiaTechStagePage = () => {
     </a>,
   ];
 
+  const competence_b14 = [
+    <p>Analyser les objectifs et les modalités d’organisation d’un projet</p>,
+    <p>Planifier les activités</p>,
+    <p>Évaluer les indicateurs de suivi d’un projet et analyser les écarts</p>,
+  ];
+  const competence_b15 = [
+    <p>Réaliser les tests d’intégration et d’acceptation d’un service</p>,
+    <p>Déployer un service</p>,
+  ];
+  const competence_b16 = [
+    <p>Mettre en place son environnement d’apprentissage personnel</p>,
+  ];
+
   return (
     <section className="idiatech-stage" id="idiatech-stage">
       <h2 className="heading">
@@ -172,6 +185,22 @@ const IdiaTechStagePage = () => {
             largement contribué à faire de ce stage une expérience humaine et
             professionnelle très marquante.
           </p>
+        </ProjectParagraph>
+
+        <ProjectParagraph
+          className="liste-competences"
+          title="Liste des compétences couvertes"
+        >
+          <p>B1.4 : Travailler en mode projet</p>
+          <ListGroup items={competence_b14} className="pl-3" />
+
+          <p>
+            B1.5 : Mettre à disposition des utilisateurs un service informatique
+          </p>
+          <ListGroup items={competence_b15} className="pl-3" />
+
+          <p>B1.6 : Organiser son développement professionnel</p>
+          <ListGroup items={competence_b16} className="pl-3" />
         </ProjectParagraph>
       </div>
     </section>

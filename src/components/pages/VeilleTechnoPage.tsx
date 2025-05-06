@@ -1,8 +1,15 @@
 import React from "react";
 import ProjectParagraph from "../ProjectParagraph";
 import "./VeilleTechnoPage.css";
+import ListGroup from "../ListGroup";
 
 const VeilleTechnoPage = () => {
+  const competence_b16 = [
+    <p>Mettre en œuvre des outils et stratégies de veille informationnelle</p>,
+    <p>Gérer son identité professionnelle</p>,
+    <p>Développer son projet professionnel</p>,
+  ];
+
   return (
     <section className="veilletech" id="veilletech">
       <h2 className="heading">
@@ -78,6 +85,14 @@ const VeilleTechnoPage = () => {
               des annonces de mises à jour importantes
             </p>
           </div>
+        </ProjectParagraph>
+
+        <ProjectParagraph
+          className="liste-competences"
+          title="Liste des compétences couvertes"
+        >
+          <p>B1.6 : Organiser son développement professionnel</p>
+          <ListGroup items={competence_b16} className="pl-3" />
         </ProjectParagraph>
       </div>
     </section>
