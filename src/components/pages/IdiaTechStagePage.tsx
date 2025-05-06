@@ -15,6 +15,9 @@ const IdiaTechStagePage = () => {
     </a>,
   ];
 
+  const competence_b12 = [
+    <p>Traiter des demandes concernant les applications</p>,
+  ];
   const competence_b14 = [
     <p>Analyser les objectifs et les modalités d’organisation d’un projet</p>,
     <p>Planifier les activités</p>,
@@ -191,6 +194,12 @@ const IdiaTechStagePage = () => {
           className="liste-competences"
           title="Liste des compétences couvertes"
         >
+          <p>
+            B1.2 : Répondre aux incidents et aux demandes d’assistance et
+            d’évolution
+          </p>
+          <ListGroup items={competence_b12} className="pl-3" />
+
           <p>B1.4 : Travailler en mode projet</p>
           <ListGroup items={competence_b14} className="pl-3" />
 
