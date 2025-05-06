@@ -26,7 +26,7 @@ const VeilleTechnoPage = () => {
           </p>
         </ProjectParagraph>
 
-        <ProjectParagraph title="Évolution des frameworks JavaScript (React, Vue, Angular)">
+        <ProjectParagraph title="Évolution des frameworks JavaScript">
           <p>
             J’ai choisi pour ma veille technologique le thème de l’évolution des
             frameworks JavaScript. Ces frameworks jouent un rôle central dans le
@@ -34,12 +34,11 @@ const VeilleTechnoPage = () => {
             des applications dynamiques, interactives et performantes, tout en
             apportant une structure au code et en facilitant sa maintenance. En
             tant que futur développeur, il est essentiel de comprendre les
-            différences entre les principaux frameworks — React, Vue.js et
-            Angular — d’analyser leurs évolutions récentes, leur popularité
-            auprès des développeurs, ainsi que leurs domaines d’application.
-            Bien qu’ils dominent tous les trois le marché du développement web,
-            chacun se distingue par ses spécificités techniques et ses cas
-            d’usage.
+            différences entre les principaux frameworks React, Vue.js et Angular
+            et d’analyser leurs évolutions récentes, leur popularité auprès des
+            développeurs, ainsi que leurs domaines d’application. Bien qu’ils
+            dominent tous les trois le marché du développement web, chacun se
+            distingue par ses spécificités techniques et ses cas d’usage.
           </p>
         </ProjectParagraph>
 
