@@ -40,7 +40,7 @@ const MediatekDocumentPage = () => {
     <a
       href={`${
         import.meta.env.BASE_URL
-      }/documents/mediatekformations/bilan_atelier1.pdf`}
+      }/documents/mediatekdocuments/CompteRenduMediatekDocuments.pdf`}
       target="blank"
     >
       CompteRendu.pdf
