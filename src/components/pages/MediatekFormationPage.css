@@ -19,8 +19,26 @@
   text-decoration: underline;
 }
 
+
+
 @media(max-width: 1300px) {
   .mediatekformation-content {
     padding: 0 5rem;
+  }
+
+  .mediatekformation-content .video-user {
+    width: 480px;
+    height: 270px;
+  }
+}
+
+@media(max-width: 600px) {
+  .mediatekformation-content .video-user {
+    width: 256px;
+    height: 144px;
+  }
+
+  .mediatekformation .heading {
+    font-size: 4rem;
   }
 }

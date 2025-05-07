@@ -144,3 +144,35 @@
 .skills .skills-container i {
   font-size: 10rem;
 }
+
+@media (max-width: 1000px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .about-img img {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    width: 30vw;
+  }
+  
+  .about-content h1 {
+    font-size: 5rem
+  }
+
+  .about-content h3 {
+    font-size: 2.6rem
+  }
+
+  .about-content {
+    margin-left: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-img img {
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    width: 70vw;
+  }
+}

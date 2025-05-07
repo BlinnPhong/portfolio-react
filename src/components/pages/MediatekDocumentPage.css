@@ -23,4 +23,25 @@
   .mediatekdocument-content{
     padding: 0 5rem;
   }
+
+  .mediatekdocument-content .video-user {
+    width: 480px;
+    height: 270px;
+  }
+}
+
+@media(max-width: 600px) {
+
+  .mediatekdocument-content .video-user {
+    width: 256px;
+    height: 144px;
+  }
+
+  .mediatekdocument .api-link {
+    word-break: break-word;
+  }
+
+  .mediatekdocument .heading {
+    font-size: 4rem;
+  }
 }

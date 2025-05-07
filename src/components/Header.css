@@ -10,7 +10,6 @@
   padding: 2rem 5%;
   background: var(--bg-color);
   backdrop-filter: blur(10px);
-  transition: all 0.5s ease;
   box-shadow: 0rem 1rem 5rem rgba(0, 0, 0, 0.5);
 }
 
@@ -38,7 +37,6 @@
 
 #menu-icon {
   font-size: 3.6rem;
-  color: var(--bg-color);
   cursor: pointer;
   display: none;
 }
@@ -51,4 +49,38 @@
   .logo {
     font-size: 2rem;
   }
+
+  .header {
+    padding: 2rem 3%
+  }
 }
+
+@media (max-width: 1000px){
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width : 255px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    box-shadow: 0rem 1rem 5rem rgba(0, 0, 0, 0.5);
+  }
+
+  .navbar a {
+    display: block;
+    padding: 17px;
+    font-size: 22px;   
+  }
+
+  .navbar.active {
+    right: 0;
+  }
+}
+
+

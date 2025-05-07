@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleNavBar = () => {
+    setIsActive((prev) => !prev);
+  };
+
   return (
     <>
       <header className="header">
@@ -10,9 +16,9 @@ const Header = () => {
           Donovan Blocus
         </Link>
 
-        <i className="bx bx-menu" id="menu-icon"></i>
+        <i className="bx bx-menu" id="menu-icon" onClick={toggleNavBar}></i>
 
-        <nav className="navbar">
+        <nav className={`navbar ${isActive ? "active" : ""}`}>
           <Link to="/">Présentation</Link>
           <Link to="/projects">Projets</Link>
           <Link to="/veilletech">Veilles Technologiques</Link>

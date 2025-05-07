@@ -207,7 +207,7 @@ const MediatekDocumentPage = () => {
           <ProjectParagraph title="API REST en ligne">
             <p>
               URL de l'API en ligne :{" "}
-              <span className="hint-snd">
+              <span className="hint-snd api-link">
                 https://api.mediatekdocuments.com/rest_mediatekdocuments
               </span>
             </p>
@@ -233,6 +233,7 @@ const MediatekDocumentPage = () => {
           <ProjectParagraph title="Documentation utilisateur">
             <div>
               <iframe
+                className="video-user"
                 width="854"
                 height="480"
                 src="https://www.youtube.com/embed/aLhzLLVBjQ8"
