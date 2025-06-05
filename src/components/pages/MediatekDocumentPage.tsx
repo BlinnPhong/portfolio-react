@@ -173,6 +173,14 @@ const MediatekDocumentPage = () => {
             </p>
           </ProjectParagraph>
 
+          <ProjectParagraph title="Important">
+            <p>
+              Ayant réalisé ce projet de manière individuelle, seule la mission
+              3 n’a pas été effectuée, les missions 1 et 3 étant facultatives
+              pour les élèves travaillant seuls.
+            </p>
+          </ProjectParagraph>
+
           <ProjectParagraph title="Langages et technologies utilsés">
             <p>
               Visual Studio 2019, C#, Apache NetBeans IDE 21, PHP, SQL, Postman,
